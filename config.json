@@ -1,0 +1,17 @@
+{
+    "name": "Samil MQTT",
+    "version": "1.0.0",
+    "slug": "samil_mqtt",
+    "description": "Run Samil MQTT command",
+    "startup": "services",
+    "boot": "auto",
+    "ports": [1883],
+    "env": ["LANG=C.UTF-8"],
+    "docker": [
+      {
+        "image": "samil-mqtt-image:latest",
+        "name": "samil_mqtt",
+        "network_mode": "host"
+      }
+    ]
+  }
